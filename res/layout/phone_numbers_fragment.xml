@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/textViewMainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue_500"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/title_main"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/light_blue_500"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_weight="20"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/title_block_incoming"
+	        android:textColor="@android:color/white"
+	        android:textSize="13sp"
+	        android:typeface="monospace" 
+	        android:paddingBottom="5dp"
+	        />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="60"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/title_phone_number"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:typeface="monospace" 
+            android:paddingBottom="5dp"
+            />
+        
+        <TextView
+	        android:layout_width="0dp"
+	        android:layout_weight="20"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/title_block_outgoing"
+	        android:textColor="@android:color/white"
+	        android:textSize="13sp"
+	        android:typeface="monospace"
+	        android:paddingBottom="5dp" 
+			/>
+        
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	>
+        <LinearLayout 
+            android:id="@+id/linearLayoutPhonesContainer"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+            >
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
