@@ -20,8 +20,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     guava \
     android-support-v13 \
     android-support-v4 \
-    libphonenumber \
-    libgeocoding
+    libphonenumber 
 
 LOCAL_PACKAGE_NAME := Callguard
 LOCAL_CERTIFICATE := shared
